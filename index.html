@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./ico/favicon.png" sizes="64x64">
+  <title>使用Docker網站架設</title>
+
+  <!-- lib -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css' integrity='sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==' crossorigin='anonymous'/>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js' integrity='sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js' integrity='sha512-Xk3wWei2TGrsh9kDSBKUMIjw/86sLUvhtnv9f7fOuIwhhiUTKz8szkWkzHthrM5Bb3Bu9idSzkxOrkzhcneuiw==' crossorigin='anonymous'></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+  <!-- app -->
+  <script src="./js/app.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="container">
+
+  <hr id="edge">
+
+  <div class="row text-center" id="top">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <h1>使用Docker網站架設</h1>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+
+  <hr id="edge">
+
+  <div class="row text-center" id="mid">
+    <div class="col-sm"></div>
+    <div class="col-sm-6">
+
+      <div class="form-group" id="loginForm" style="display: inline-block;">
+        <div class="form-inline mt-2">
+          <label for="account">帳號:</label>
+          <input type="text" name="account" id="account" placeholder="輸入帳號">
+        </div>
+        <div class="form-inline mt-2">
+          <label for="password">密碼:</label>
+          <input type="password" name="password" id="password" placeholder="輸入密碼">
+        </div>
+        <div class="form-inline mt-2">
+          <input type="button" value="登入" onclick="login()" class="btn btn-outline-primary">
+        </div>
+      </div>
+
+      <div class="form-group" id="infoForm" style="display: none;"></div>
+
+    </div>
+    <div class="col-sm"></div>
+  </div>
+
+  <hr id="edge">
+
+  <div class="row text-center" id="bottom">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <h1>NUUCSIE</h1>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+
+  <hr id="edge">
+
+</body>
+</html>
