@@ -1,6 +1,4 @@
-﻿const host = "http://localhost:5000"
-
-function checkPayload(payload) {
+﻿function checkPayload(payload) {
   let state = true
   Object.values(payload).forEach( value => {
     if (value=="" || value==undefined) {
@@ -33,7 +31,7 @@ function login() {
 
   if (!checkPayload(payload)) return
 
-  axios.post(host + '/api/login', {
+  axios.post('/api/login', {
     data: JSON.stringify(payload),
     dataType: "application/json"
   })
@@ -76,7 +74,7 @@ function logout() {
 
   if (!checkPayload(payload)) return
 
-  axios.post(host + '/api/logout', {
+  axios.post('/api/logout', {
     data: JSON.stringify(payload),
     dataType: "application/json"
   })
@@ -122,7 +120,7 @@ function getUserList() {
 
   if (!checkPayload(payload)) return
   
-  axios.post(host + '/api/userlist', {
+  axios.post('/api/userlist', {
     data: JSON.stringify(payload),
     dataType: "application/json"
   })
