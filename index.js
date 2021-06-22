@@ -3,7 +3,7 @@ const express = require("express")
 const router = express.Router()
 const app = express()
 const server = http.createServer(app)
-const PORT = 5000
+const PORT = process.env.PORT || 8080
 
 const defaultAPIKEY = "NUUCSIE"
 var userlist = {}
